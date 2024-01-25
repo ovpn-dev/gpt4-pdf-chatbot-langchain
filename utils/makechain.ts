@@ -40,7 +40,7 @@ export const makeChain = (retriever: VectorStoreRetriever) => {
   const answerPrompt = ChatPromptTemplate.fromTemplate(QA_TEMPLATE);
 
   const model = new ChatOpenAI({
-    temperature: 0, // increase temperature to get more creative answers
+    temperature: 1, // increase temperature to get more creative answers
     modelName: 'gpt-3.5-turbo', //change this to gpt-4 if you have access
   });
 
